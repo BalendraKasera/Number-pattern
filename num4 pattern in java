@@ -1,0 +1,27 @@
+/*111111111
+111111122
+111111333
+111114444
+111155555
+111666666
+117777777
+188888888
+999999999 */
+import java.util.*;
+
+public class Num4 {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt();
+        for (int i = 1; i <= row; i++) {
+            for (int j = i; j <= (row - 1); j++) {
+                System.out.print(1);
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }
+    }
+
+}
